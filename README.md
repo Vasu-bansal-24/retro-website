@@ -74,7 +74,7 @@ retro-website/
 ## 🌟 Screenshots
 
 ### Home Page:
-![Home Page Screenshot](images\Screenshot.png)
+![Home Page Screenshot]([images\Screenshot.png](https://github.com/Vasu-bansal-24/retro-website/blob/main/images/Screenshot.png))
 
 ---
 
