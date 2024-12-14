@@ -1,6 +1,6 @@
 # Retro 90s Website
 
-## submission for codedex hackathon 2024
+## Submission for Codedex Hackathon 2024
 
 Welcome to the **Retro 90s Website** project! This is a vibrant, colorful, and nostalgic website design that brings back the wild aesthetics of the 90s. From glowing neon borders to pixel art and loud color gradients, this website encapsulates everything retro!
 
