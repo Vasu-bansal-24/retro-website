@@ -74,7 +74,7 @@ retro-website/
 ## 🌟 Screenshots
 
 ### Home Page:
-![Home Page Screenshot](retro\images\Screenshot.png)
+![Home Page Screenshot](images\Screenshot.png)
 
 ---
 
