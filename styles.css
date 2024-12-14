@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('https://fonts.cdnfonts.com/s/5605/PressStart2P-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'PixelOperator';
+    src: url('https://fonts.cdnfonts.com/s/16979/PixelOperator.woff') format('woff');
+}
+
+body {
+    font-family: 'PressStart2P', 'Comic Sans MS', cursive, sans-serif;
+    background-color: #000;
+    color: #00ff00; /* Matrix-like neon green */
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.imgur.com/NpO4OWQ.png'); /* Scrolling stars */
+    background-size: cover;
+    animation: scroll-bg 30s linear infinite; /* Infinite scrolling */
+    text-shadow: 0px 0px 5px #00ff00;
+    filter: contrast(1.3);
+    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=203012'), auto; /* Classic pixel cursor */
+}
+
+@keyframes scroll-bg {
+    from { background-position: 0 0; }
+    to { background-position: 0 -100%; }
+}
+
+.container {
+    max-width: 90%; /* Adjust width for better fit on smaller screens */
+    margin: 20px auto; /* Add spacing around the container */
+    padding: 30px; /* Increased padding for better readability */
+    border: 5px solid #00ff00; /* Solid neon green border for sharper edges */
+    border-radius: 10px; /* Smooth rounded corners for a retro-modern feel */
+    background: repeating-linear-gradient(
+        45deg,
+        #ffcc00,
+        #ffcc00 10px,
+        #ff69b4 10px,
+        #ff69b4 20px
+    ); /* Diagonal striped gradient for a vibrant retro feel */
+    box-shadow: 0px 0px 20px #00ff00, 0px 0px 40px #ff00ff inset; /* Neon glow effect */
+    text-align: center; /* Center-align text inside the container */
+    animation: neon-border-flicker 2s infinite alternate; /* Subtle flicker animation */
+}
+
+/* Neon flicker animation */
+@keyframes neon-border-flicker {
+    0% {
+        box-shadow: 0px 0px 20px #00ff00, 0px 0px 40px #ff00ff inset;
+    }
+    50% {
+        box-shadow: 0px 0px 30px #00ff00, 0px 0px 50px #ff00ff inset;
+    }
+    100% {
+        box-shadow: 0px 0px 20px #00ff00, 0px 0px 40px #ff00ff inset;
+    }
+}
+
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #ff69b4, #ff4500, #00ff00);
+    padding: 30px 20px;
+    animation: glow 5s infinite alternate;
+    border-bottom: 5px ridge #ffff00;
+    text-transform: uppercase;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0px 0px 10px #ff69b4; }
+    100% { box-shadow: 0px 0px 30px #00ff00; }
+}
+
+header h1 {
+    font-size: 60px;
+    color: #ff69b4;
+    text-shadow: 2px 2px 5px #00ff00, -2px -2px 5px #ff4500;
+    font-family: 'PixelOperator', cursive;
+    animation: rainbow-text 3s infinite alternate;
+}
+
+@keyframes rainbow-text {
+    0% { color: #ff0000; }
+    25% { color: #ffa500; }
+    50% { color: #ffff00; }
+    75% { color: #00ff00; }
+    100% { color: #00ffff; }
+}
+
+header .logo {
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 4px inset #0000ff;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+@keyframes nav-item-fade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff00ff, #0000ff, #00ff00);
+    border: 4px dotted #ffff00;
+    border-radius: 10px;
+    animation: button-pulse 2s infinite alternate;
+    text-shadow: 1px 1px 2px #000;
+}
+
+@keyframes button-pulse {
+    0% { transform: scale(1); box-shadow: 0 0 10px #00ff00; }
+    100% { transform: scale(1.1); box-shadow: 0 0 20px #ff69b4; }
+}
+
+nav ul li a:hover {
+    transform: rotate(-5deg) scale(1.3);
+    background: linear-gradient(45deg, #00ffff, #ff00ff, #00ff00);
+}
+
+nav ul h1 {
+    font-size: 28px;
+    color: lawngreen; /* Bright green */
+    z-index: 2;
+    font-family: 'Comic Sans MS', cursive; 
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000; 
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+    border: 6px double #00ff00;
+    background: url('https://i.imgur.com/rPVNmuP.png'); /* Neon grid */
+    animation: tilt-section 10s infinite alternate ease-in-out;
+}
+
+@keyframes tilt-section {
+    0%, 100% { transform: skew(-2deg); }
+    50% { transform: skew(3deg); }
+}
+
+section h2 {
+    font-size: 40px;
+    font-family: 'PixelOperator', monospace;
+    color: #ff4500;
+    text-shadow: 2px 2px 3px #00ffff;
+    animation: glitch 0.3s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-2px, 2px); }
+    20% { transform: translate(2px, -2px); }
+}
+
+section p {
+    font-size: 18px;
+    background-color: #ffffff; /* White background for text */
+    padding: 10px 15px;
+    border: 3px dashed #ff00ff; /* Dashed pink border */
+    display: inline-block;
+    max-width: 800px;
+    animation: slide-in 2s ease-in-out;
+}
+
+@keyframes slide-in {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between images */
+    justify-items: center; /* Center images */
+}
+
+.gallery img {
+    max-width: 100%;
+    border: 4px solid #ffcc00; /* Yellow border */
+    border-radius: 5px;
+    transition: transform 0.3s, filter 0.3s; /* Smooth hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: repeating-linear-gradient(45deg, #ff69b4, #00ff00, #0000ff);
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'PixelOperator', monospace;
+    animation: scroll-footer 8s infinite linear;
+    text-shadow: 2px 2px 4px #000;
+}
+
+@keyframes scroll-footer {
+    0% { background-position: 0 0; }
+    100% { background-position: -200px 200px; }
+}
+
+.fun img:nth-of-type(1) {
+    z-index: 0;
+    position: absolute;
+    width: 180px;
+    margin-left: -450px;
+    margin-top: -200px; /* Adjust position as needed */
+}
+
+.fun img:nth-of-type(2) {
+    z-index: 0;
+    position: absolute;
+    width: 180px;
+    margin-left: 250px; /* Adjust position as needed */
+    margin-top: -200px; /* Adjust position as needed */
+}
+
+audio {
+    display: block;
+    position: fixed;
+    margin-left: 85px; /* Adjust position as needed */
+    top: 650px; /* Adjust position as needed */
+    width: 100px; /* Width of audio player */
+}
+
+marquee {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'PressStart2P', cursive;
+    color: #ff00ff;
+    background-color: #000000;
+    border: 4px dashed #ffff00;
+    padding: 10px;
+    text-shadow: 1px 1px 2px #000;
+}
